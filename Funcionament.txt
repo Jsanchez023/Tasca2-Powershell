@@ -1,0 +1,30 @@
+Ex1 - Un script que permeti afegir usuaris al sistema des de terminal
+
+El primer que fa el script és crear una OU on s'emmagatzemaran els usuaris. Si ja està creada no fa res.
+Després et demana la informació mínima per crear un usuari.
+A continuació, agafa la ruta del domini i genera la ruta general.
+Crea l'usuari amb les dades obtingudes.
+Finalment, dona el missatge de si s'ha realitzat satisfactòriament o no la creació.
+
+
+
+Ex2 - Un script que permeti afegir usuaris al sistema des d'un fitxer CSV
+
+El primer que fa el script és crear una OU on s'emmagatzemaran els usuaris. Si ja està creada no fa res.
+Després agafa la ruta del domini i genera la ruta general.
+Es situa en l'arrel del sistema per sol·licitar la ruta absoluta de l'arxiu CSV.
+Demana el separador de l'arxiu csv i accedeix al fitxer.
+Genera un bucle for on per cada fila de l'arxiu CSV selecciona la columna desitjada per omplir la informació mínima per a la creació d'usuaris.
+A cada passada del bucle s'afegeix una línia que aclareix quins usuaris s'han creat o no basant-se en si a agut algun error o no per resumir al final els resultats aconseguits.
+
+
+
+Ex3 - Un script que permeti gestionar els usuaris: ha d'indicar el nombre d'usuaris totals al sistema, comptes d'usuari creats recentment, usuaris que no van canviar la contrasenya, quins hi ha inactius i proposar esborrar-los.
+
+El primer que fa el script és un bucle per demanar la carpeta d'usuaris del servidor per poder treballar en aquesta. Si no es troba la direcció es torna a preguntar.
+Un cop té la carpeta d'usuaris, demana a l'usuari en dies el temps per calcular usuaris recents i inactius posteriorment.
+A continuació, es genera un bucle per al menú, on no acabarà fins que s'utilitzi l'opció 4.
+La primera opció filtra usuaris comparant la data actual amb la data de creació per determinar, amb els dies seleccionats, si és un usuari creat recentment o no.
+La segona opció compara la data de l'últim canvi de contrasenya amb la data de creació i compara per determinar quins usuaris no s'han canviat la contrasenya.
+La tercera opció compara l'última data de login amb la data actual, amb els dies seleccionats, per determinar els usuaris que no s'han fet servir en un temps.
+La quarta opció acaba el bucle i, a conseqüència, finalitza el programa.
